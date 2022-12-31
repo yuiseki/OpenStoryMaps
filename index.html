@@ -28,7 +28,7 @@
       font-size: 5.73rem;
       font-weight: 700;
       line-height: 1.2;
-      padding-left: 2vw;
+      margin: 0px;
     }
 
     h2 {
@@ -37,6 +37,7 @@
       font-weight: 700;
       line-height: 1.2;
       padding-left: 2vw;
+      padding-top: 3vw;
     }
 
     h3 {
@@ -45,6 +46,7 @@
       font-weight: 600;
       line-height: 1.2;
       padding-left: 2vw;
+      padding-top: 3vw;
     }
 
     p {
@@ -63,6 +65,44 @@
       line-height: 1.4;
       margin: 0px;
       padding-left: 2vw;
+    }
+
+    section#hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    section#hero > div {
+      font-family: "Noto Sans", sans-serif;
+      font-size: 1.98rem;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    div#root > section {
+      height: 100vh;
+    }
+
+    div#toc {
+      display: flex;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      background-color: white;
+      height: 3vh;
+    }
+
+    div#toc > ol {
+      display: flex;
+      list-style: none;
+      margin: 0px;
+      padding-left: 2vw;
+    }
+
+    div#toc > ol > li {
+      margin-right: 10px;
     }
   </style>
   <body>

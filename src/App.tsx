@@ -14,12 +14,14 @@ export const App = () => {
 
   return (
     <>
-      {/* @ts-ignore */}
-      <h1>{Story.title}</h1>
-      {/* @ts-ignore */}
-      <p>{Story.author}</p>
-      {/* @ts-ignore */}
-      <p>{Story.date}</p>
+      <section id="hero">
+        {/* @ts-ignore */}
+        <h1>{Story.title}</h1>
+        {/* @ts-ignore */}
+        <div>{Story.author}</div>
+        {/* @ts-ignore */}
+        <div>{Story.date}</div>
+      </section>
       <div id="toc" />
       <Story.default />
     </>
