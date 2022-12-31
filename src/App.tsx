@@ -19,6 +19,7 @@ export const App = () => {
           {/* @ts-ignore */}
           <img src={Story.titleImage} />
         </div>
+        <div id="hero-overlay"></div>
         <div id="hero-content">
           {/* @ts-ignore */}
           <h1>{Story.title}</h1>

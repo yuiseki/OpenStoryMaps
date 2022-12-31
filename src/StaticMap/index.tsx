@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import { Map } from "react-map-gl";
+import { Map, NavigationControl } from "react-map-gl";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 
@@ -30,8 +30,14 @@ export const StaticMap: React.FC<{
       scrollZoom={false}
       touchPitch={false}
       touchZoomRotate={false}
-      style={{ width: "100%", height: 300 }}
+      style={{
+        display: "block",
+        width: "100%",
+        height: "25vh",
+      }}
       mapStyle={style}
-    />
+    >
+      <NavigationControl position="bottom-right" />
+    </Map>
   );
 };

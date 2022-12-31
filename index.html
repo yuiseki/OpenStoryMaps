@@ -6,10 +6,6 @@
     <title>OpenStoryMaps</title>
   </head>
   <style>
-    * {
-      z-index: 10;
-    }
-
     html,
     body {
       margin: 0px;
@@ -40,9 +36,9 @@
       font-size: 3.98rem;
       font-weight: 700;
       line-height: 1.2;
-      padding-left: 2vw;
       margin: 0px;
-      padding-top: 3vw;
+      padding-left: 2vw;
+      padding-top: 3.5vw;
     }
 
     h3 {
@@ -51,7 +47,7 @@
       font-weight: 600;
       line-height: 1.2;
       padding-left: 2vw;
-      padding-top: 3vw;
+      padding-top: 3.5vw;
     }
 
     p {
@@ -71,12 +67,14 @@
       line-height: 1.4;
       margin: 0px;
       padding-left: 2vw;
-      background: rgba(255, 255, 255, 0.8);
     }
 
     div#root > section {
       height: 100vh;
+      display: flex;
+      flex-direction: column;
       position: relative;
+      border-bottom: 1px dashed gray;
     }
 
     section#hero {
@@ -84,6 +82,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      height: 100vh !important;
     }
 
     section#hero > div {
@@ -94,17 +93,25 @@
       align-items: center;
       justify-content: center;
       width: 100%;
+    }
+
+    section#hero > div#hero-background {
       height: 100%;
     }
 
-    section#hero > div#hero-content {
+    section#hero > div#hero-overlay {
+      height: 100%;
       backdrop-filter: blur(3px);
-      color: white;
       background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.5) 25%,
         rgba(0, 0, 0, 0.05) 100%
       );
+    }
+
+    section#hero > div#hero-content {
+      height: 65%;
+      color: white;
     }
 
     section#hero > div > div {
@@ -116,20 +123,20 @@
     }
 
     section > div.section-background {
-      display: flex;
-      justify-content: right;
       position: absolute;
       top: 0;
-      z-index: -1;
+      display: flex;
+      justify-content: right;
+      z-index: -10;
       width: 100%;
-      height: 100vh;
+      height: 100%;
     }
 
     section > div.section-background > img {
       display: block;
       position: absolute;
       top: 0;
-      z-index: -1;
+      z-index: -10;
       object-fit: contain;
       max-width: 100%;
       height: 100%;
@@ -138,8 +145,10 @@
     section > div.section-background > div.section-background-overlay {
       position: absolute;
       top: 0;
+      z-index: -9;
       width: 100%;
-      height: 100vh;
+      height: 100%;
+      backdrop-filter: blur(2px);
       background: rgba(255, 255, 255, 0.4);
     }
 
@@ -178,7 +187,7 @@
 
     *[class*="mapboxgl-"],
     *[class*="maplibregl-"] {
-      z-index: 20 !important;
+      z-index: -1 !important;
     }
   </style>
   <body>
