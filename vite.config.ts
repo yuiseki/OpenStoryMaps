@@ -1,13 +1,22 @@
-import { defineConfig } from 'vite'
-import * as path from 'path'
-import react from '@vitejs/plugin-react'
-import pages from 'vite-plugin-react-pages'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import mdx from "@mdx-js/rollup";
 
-module.exports = defineConfig({
-  plugins: [
-    react(),
-    pages({
-      pagesDir: path.join(__dirname, 'pages'),
-    }),
-  ],
-})
+// remark plugins
+import remarkFrontmatter from "remark-frontmatter";
+import remarkMdxFrontmatter from "remark-mdx-frontmatter";
+import remarkGfm from "remark-gfm";
+
+// rehype plugins
+import rehypeSlug from "rehype-slug";
+
+const mdxOptions = {
+  remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter, remarkGfm],
+  rehypePlugins: [rehypeSlug],
+};
+
+export default defineConfig(async () => {
+  return {
+    plugins: [mdx(mdxOptions), react()],
+  };
+});
