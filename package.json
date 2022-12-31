@@ -5,12 +5,10 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "vite serve",
-    "debug": "node --inspect ./node_modules/vite/bin/vite serve",
-    "build": "rimraf dist && vite build --outDir dist && serve -s dist",
-    "debug:build": "node --inspect ./node_modules/vite/bin/vite build --outDir dist",
-    "ssr": "rimraf dist && vite-pages ssr",
-    "debug:ssr": "rimraf dist && node --inspect-brk ./node_modules/vite-plugin-react-pages/bin/vite-pages.js ssr"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:tsc": "tsc -p tsconfig.json"
   },
   "dependencies": {
     "@mdx-js/rollup": "^2.2.1",
