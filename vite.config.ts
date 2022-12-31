@@ -23,6 +23,7 @@ const mdxOptions = {
 
 export default defineConfig(async () => {
   return {
+    base: "/OpenStoryMaps/",
     plugins: [mdx(mdxOptions), react()],
   };
 });
