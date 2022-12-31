@@ -17,7 +17,7 @@ import { SectionBackground } from "./src/SectionBackground";
 
 OpenStoryMaps is a software designed to tell a story along with maps.
 
-Very many people want to tell their story, with maps.
+Really many people want to tell their story, with maps.
 
 They also need to tell their story with data visualization.
 
@@ -25,16 +25,13 @@ OpenStoryMaps allows you to tell a story with maps and data by simply writing Ma
 
 This web page demonstrates what is possible with OpenStoryMaps.
 
+Let's scroll down.
+
 ## UNHQ, NY, USA
 
 <SectionBackground src="UNHQ_NYC.jpg" />
 
-<StaticMap
-  style="https://tile.openstreetmap.jp/styles/osm-bright/style.json"
-  longitude={-73.968056}
-  latitude={40.749444}
-  zoom={15}
-/>
+<StaticMap longitude={-73.968056} latitude={40.749444} zoom={15} />
 
 > The United Nations is headquartered in Midtown Manhattan, New York City, United
 > States, and the complex has served as the official headquarters of the United Nations
@@ -49,12 +46,7 @@ https://en.wikipedia.org/wiki/Headquarters_of_the_United_Nations
 
 <SectionBackground src="UNGSC_Logo.png" />
 
-<StaticMap
-  style="https://tile.openstreetmap.jp/styles/osm-bright/style.json"
-  longitude={17.9466719}
-  latitude={40.6494882}
-  zoom={17}
-/>
+<StaticMap longitude={17.9466719} latitude={40.6494882} zoom={17} />
 
 > The United Nations Global Service Centre (UNGSC) is United Nations Peacekeeping office
 > based in Brindisi, Italy, as well as Valencia, Spain that provides logistics, geospatial
@@ -63,13 +55,25 @@ https://en.wikipedia.org/wiki/Headquarters_of_the_United_Nations
 
 https://en.wikipedia.org/wiki/United_Nations_Global_Service_Centre
 
+## UN House juba
+
+<StaticMap latitude={4.8179292} longitude={31.542533} zoom={14} />
+
+## UNMISS Aweil
+
+<StaticMap latitude={8.7583917} longitude={27.3863704} zoom={17} />
+
+## UN Base Kuajok
+
+<StaticMap latitude={8.2664981} longitude={27.9298133} zoom={14} />
+
 ## Geospatial Information Authority of Japan
 
 <StaticMap
-  style="https://tile.openstreetmap.jp/styles/osm-bright/style.json"
+  style="/gsi_ort.json"
   longitude={140.084583}
   latitude={36.104583}
-  zoom={15}
+  zoom={16}
 />
 
 > The Geospatial Information Authority of Japan (国土地理院, Kokudo Chiri-in), or GSI, is

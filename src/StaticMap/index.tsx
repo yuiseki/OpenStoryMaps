@@ -7,8 +7,13 @@ export const StaticMap: React.FC<{
   longitude: number;
   latitude: number;
   zoom: number;
-  style: string;
-}> = ({ longitude, latitude, zoom, style }) => {
+  style?: string;
+}> = ({
+  longitude,
+  latitude,
+  zoom,
+  style = "https://tile.openstreetmap.jp/styles/osm-bright/style.json",
+}) => {
   return (
     <Map
       mapLib={maplibregl}
