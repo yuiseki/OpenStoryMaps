@@ -1,0 +1,20 @@
+{
+  "version": 8,
+  "sources": {
+    "ort": {
+      "type": "raster",
+      "tiles": [
+        "https://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg"
+      ],
+      "tileSize": 256,
+      "attribution": "出典: <a href=\"https://maps.gsi.go.jp/development/ichiran.html\">地理院タイル</a>"
+    }
+  },
+  "layers": [
+    {
+      "id": "ort",
+      "source": "ort",
+      "type": "raster"
+    }
+  ]
+}

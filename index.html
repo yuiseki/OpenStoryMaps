@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenStoryMaps</title>
+    <script type="module" crossorigin src="/assets/index-7ca23599.js"></script>
+    <link rel="stylesheet" href="/assets/index-fe227fe9.css">
+  </head>
+  <style>
+    html,
+    body {
+      margin: 0px;
+      padding: 0px;
+      font-size: 70%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1 {
+      font-family: "Noto Sans", sans-serif;
+      font-size: 5.73rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 0px;
+    }
+
+    h2 {
+      font-family: "Noto Sans", sans-serif;
+      font-size: 2.98rem;
+      font-weight: 600;
+      line-height: 1.2;
+      margin: 0px;
+      padding-left: 2vw;
+      padding-bottom: 2vw;
+      padding-top: 3.5vw;
+    }
+
+    h3 {
+      font-family: "Noto Sans", sans-serif;
+      font-size: 1.98rem;
+      font-weight: 400;
+      line-height: 1.2;
+      padding-left: 2vw;
+      padding-top: 3.5vw;
+    }
+
+    p {
+      font-family: "Noto Serif", serif;
+      font-size: 1.92rem;
+      font-weight: 400;
+      line-height: 1.65;
+      margin: 5px;
+      padding-left: 2vw;
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    blockquote {
+      font-family: "Avenir Next", sans-serif;
+      font-style: italic;
+      font-size: 2.76rem;
+      font-weight: 500;
+      line-height: 1.4;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    div#root > section {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      border-bottom: 1px dashed gray;
+    }
+
+    section#hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh !important;
+    }
+
+    section#hero > div {
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    section#hero > div#hero-background {
+      height: 100%;
+    }
+
+    section#hero > div#hero-overlay {
+      height: 100%;
+      backdrop-filter: blur(3px);
+      background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.5) 25%,
+        rgba(0, 0, 0, 0.05) 100%
+      );
+    }
+
+    section#hero > div#hero-content {
+      height: 65%;
+      color: white;
+    }
+
+    section#hero > div > div {
+      font-family: "Noto Sans", sans-serif;
+      font-size: 1.98rem;
+      font-weight: 500;
+      line-height: 1.2;
+      margin: 10px;
+    }
+
+    section > div.section-background {
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: right;
+      z-index: -10;
+      width: 100%;
+      height: 100%;
+    }
+
+    section > div.section-background > img {
+      display: block;
+      position: absolute;
+      top: 0;
+      z-index: -10;
+      object-fit: contain;
+      max-width: 100%;
+      height: 100%;
+    }
+
+    section > div.section-background > div.section-background-overlay {
+      position: absolute;
+      top: 0;
+      z-index: -9;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(2px);
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    div#toc {
+      display: flex;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      height: 5vh;
+      background-color: #f5f5f5;
+      border-bottom: 1px solid #ebebeb;
+      color: #304e4e;
+      z-index: 1000;
+    }
+
+    div#toc > ol {
+      display: grid;
+      list-style: none;
+      grid-auto-flow: column;
+      grid-gap: 1.2rem;
+      margin: 0px;
+      padding-left: 2vw;
+    }
+
+    div#toc > ol > li {
+      margin-right: 10px;
+    }
+
+    div#toc > ol > li > a {
+      color: #304e4e;
+      font-family: "Neue Helvetica", sans-serif;
+      font-size: 1.33rem;
+      font-weight: 400;
+      line-height: 1.65;
+    }
+
+    *[class*="mapboxgl-"],
+    *[class*="maplibregl-"] {
+      z-index: -1 !important;
+    }
+  </style>
+  <body>
+    <div id="root"></div>
+    
+  </body>
+</html>
