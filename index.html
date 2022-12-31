@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OpenStoryMaps</title>
-    <script type="module" crossorigin src="/OpenStoryMaps/assets/index-9a7fe3f9.js"></script>
+    <script type="module" crossorigin src="/OpenStoryMaps/assets/index-1eea6948.js"></script>
     <link rel="stylesheet" href="/OpenStoryMaps/assets/index-fe227fe9.css">
   </head>
   <style>
@@ -42,6 +42,7 @@
       padding-left: 2vw;
       padding-bottom: 2vw;
       padding-top: 3.5vw;
+      background: rgba(255, 255, 255, 0.8);
     }
 
     h3 {
@@ -51,6 +52,7 @@
       line-height: 1.2;
       padding-left: 2vw;
       padding-top: 3.5vw;
+      display: none;
     }
 
     p {
@@ -70,7 +72,7 @@
       font-weight: 500;
       line-height: 1.4;
       margin: 0px;
-      padding: 0px;
+      padding-left: 2vw;
     }
 
     div#root {
@@ -80,14 +82,12 @@
       height: 100vh;
     }
 
-    div#root > section {
-      position: sticky;
+    section {
+      position: relative;
       top: 0;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
+      overflow-y: auto;
+      min-height: 95vh;
       border-bottom: 1px dashed gray;
-      background-color: white;
     }
 
     section#hero {
