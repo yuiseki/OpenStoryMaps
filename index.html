@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>OpenStoryMaps</title>
   </head>
   <style>
     * {
@@ -14,7 +14,7 @@
     body {
       margin: 0px;
       padding: 0px;
-      font-size: 62.5%;
+      font-size: 70%;
     }
 
     body {
@@ -70,7 +70,7 @@
       line-height: 1.4;
       margin: 0px;
       padding-left: 2vw;
-      background: rgba(255, 255, 255, 0.4);
+      background: rgba(255, 255, 255, 0.8);
     }
 
     div#root > section {
@@ -126,9 +126,11 @@
 
     section > div.section-background > img {
       display: block;
+      position: absolute;
+      top: 0;
       z-index: -1;
       object-fit: contain;
-      width: auto;
+      max-width: 100%;
       height: 100%;
     }
 
