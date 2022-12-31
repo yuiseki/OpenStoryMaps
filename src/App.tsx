@@ -24,7 +24,7 @@ export const App = () => {
           {/* @ts-ignore */}
           <h1>{Story.title}</h1>
           {/* @ts-ignore */}
-          <h3>{Story.subtitle}</h3>
+          <div>{Story.subtitle}</div>
           {/* @ts-ignore */}
           <div>{Story.author}</div>
           {/* @ts-ignore */}

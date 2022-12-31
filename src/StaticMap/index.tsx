@@ -31,9 +31,11 @@ export const StaticMap: React.FC<{
       touchPitch={false}
       touchZoomRotate={false}
       style={{
+        position: "absolute",
+        top: 0,
         display: "block",
         width: "100%",
-        height: "25vh",
+        height: "100%",
       }}
       mapStyle={style}
     >
