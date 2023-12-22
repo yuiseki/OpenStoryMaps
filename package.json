@@ -20,8 +20,8 @@
     "react-map-gl": "^7.0.20",
     "react-router-dom": "^6.5.0",
     "rehype-slug": "^5.1.0",
-    "remark-frontmatter": "^4.0.1",
-    "remark-gfm": "^3.0.1",
+    "remark-frontmatter": "^5.0.0",
+    "remark-gfm": "^4.0.0",
     "remark-mdx-frontmatter": "^4.0.0",
     "remark-sectionize": "^1.1.1",
     "tocbot": "^4.19.0"
